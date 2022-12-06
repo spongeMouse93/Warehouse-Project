@@ -5,6 +5,10 @@ import java.io.*;
 
 public class Restock{
   public static void main(String[] args){
+    if (args.length < 2){
+      System.err.println("Execute: java Restock <INput file> <OUTput file>");
+      return;
+    }
     Warehouse w = new Warehouse();
     Scanner sc = new Scanner(System.in);
     PrintWriter out = new PrintWriter(System.out);
