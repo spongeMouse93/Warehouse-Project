@@ -5,6 +5,9 @@ import java.io.*;
 
 public class Everything{
   public static void main(String[] args){
+    if (args.length < 2){
+      System.err.println("Execute: java Everything <INput file> <OUTput file>");
+    }
     Scanner sc = new Scanner(System.in);
     PrintWriter out = new PrintWriter(System.out);
     Warehouse w = new Warehouse();
