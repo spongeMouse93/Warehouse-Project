@@ -5,6 +5,10 @@ import java.io.*;
 
 public class PurchaseProduct {
     public static void main(String[] args) {
+        if (args.length < 2){
+            System.err.println("Execute: java PurchaseProduct <INput file> <OUTput file>");
+            return;
+        }
         Scanner sc = new Scanner(System.in);
         try {
             sc = new Scanner(new File(args[0]), "UTF-8");
