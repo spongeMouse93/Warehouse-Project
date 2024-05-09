@@ -17,7 +17,8 @@ public class AddProduct{
       sc = new Scanner(new File(args[0]), "UTF-8");
       sc.useLocale(Locale.US);
     }catch (IOException e){
-      e.printStackTrace();
+      System.err.println("Could not find input file.");
+      return;
     }
     try{
       out = new PrintWriter(new FileOutputStream(new File(args[1])), true);
