@@ -14,7 +14,8 @@ public class PurchaseProduct {
             sc = new Scanner(new File(args[0]), "UTF-8");
             sc.useLocale(Locale.US);
         } catch (IOException e) {
-            e.printStackTrace();
+            System.err.println("Could not find input file.");
+            return;
         }
         PrintWriter out = new PrintWriter(System.out);
         try {
