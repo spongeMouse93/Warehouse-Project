@@ -6,7 +6,7 @@ import java.io.*;
 //Used to test the warehouse add product method
 public class AddProduct{
   public static void main(String[] args){
-    if (args.length < 2){
+    if (args.length != 2){
       System.err.println("Execute: java AddProduct <INput file> <OUTput file>");
       return;
     }
