@@ -5,7 +5,7 @@ import java.io.*;
 
 public class DeleteProduct{
   public static void main(String[] args){
-    if (args.length < 2){
+    if (args.length != 2){
       System.err.println("Execute: java DeleteProduct <INput file> <OUTput file>");
       return;
     }
