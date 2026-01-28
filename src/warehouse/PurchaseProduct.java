@@ -2,6 +2,7 @@ package warehouse;
 
 import java.util.*;
 import java.io.*;
+import java.nio.charset.StandardCharsets;
 
 public class PurchaseProduct {
     public static void main(String[] args) {
@@ -11,7 +12,7 @@ public class PurchaseProduct {
         }
         Scanner sc = new Scanner(System.in);
         try {
-            sc = new Scanner(new File(args[0]), "UTF-8");
+            sc = new Scanner(new File(args[0]), StandardCharsets.UTF_8);
             sc.useLocale(Locale.US);
         } catch (IOException e) {
             System.err.println("Could not find input file.");
@@ -47,3 +48,4 @@ public class PurchaseProduct {
         out.flush();
     }
 }
+
