@@ -2,6 +2,7 @@ package warehouse;
 
 import java.util.*;
 import java.io.*;
+import java.nio.charset.StandardCharsets;
 
 //Used to test the warehouse add product method
 public class AddProduct{
@@ -14,7 +15,7 @@ public class AddProduct{
     PrintWriter out = new PrintWriter(System.out);
     Warehouse w = new Warehouse();
     try{
-      sc = new Scanner(new File(args[0]), "UTF-8");
+      sc = new Scanner(new File(args[0]), StandardChartsets.UTF_8);
       sc.useLocale(Locale.US);
     }catch (IOException e){
       System.err.println("Could not find input file.");
