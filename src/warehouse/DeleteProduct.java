@@ -2,7 +2,7 @@ package warehouse;
 
 import java.util.*;
 import java.io.*;
-import java.ni.charset.StandardCharsets;
+import java.nio.charset.StandardCharsets;
 
 public class DeleteProduct{
   public static void main(String[] args){
