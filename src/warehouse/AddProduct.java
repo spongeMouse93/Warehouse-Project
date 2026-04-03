@@ -15,7 +15,7 @@ public class AddProduct{
     PrintWriter out = new PrintWriter(System.out);
     Warehouse w = new Warehouse();
     try{
-      sc = new Scanner(new File(args[0]), StandardChartsets.UTF_8);
+      sc = new Scanner(new File(args[0]), StandardCharsets.UTF_8);
       sc.useLocale(Locale.US);
     }catch (IOException e){
       System.err.println("Could not find input file.");
